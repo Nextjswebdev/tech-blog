@@ -3,41 +3,26 @@ import PostCard from './PostCard';
 
 const posts = [
   {
-    title: 'Country Flag Icon Packs',
-    description: 'Discovering robust alternatives to Fixer.io API for currency conversion in the dynamic landscape of financial technology.',
-    date: '22 Mar',
-    slug: 'country-flag-icon-packs',
-    image: '/images/flag-icon.jpg',   
+    title: 'The Limitations of the Internet',
+    description: "Internet's Challenges: Privacy, Security, Reliability, and Solutions Explored",
+    date: '22 Mar 2024',
+    slug: 'limitation-of-internet',
+    image: '/images/article1.jpeg',   
   },
   {
-    title: 'Free Alternative of Font Awesome',
-    description: 'Discovering robust alternatives to Font Awesome for modern web design.',
-    date: '16 Mar',
-    slug: 'free-alternative-of-font-awesome',
-    image: '/images/font-awesome-icon.jpg',
+    title: 'Benefits of Artificial Intelligence',
+    description: 'Artificial Intelligence offers a plethora of benefits that are transforming industries, driving innovation, and improving quality of life.',
+    date: '16 Mar 2024',
+    slug: 'benefits-of-ai',
+    image: '/images/article2.jpg',
   },
   {
-    title: 'Use SVG icons in React.js',
-    description: 'Learn how to use SVG icons in your React.js projects for better scalability and maintainability.',
-    date: '14 Mar',
-    slug: 'use-svg-icons-in-react-js',
-    image: '/images/react-icon.jpg',
+    title: 'The Future of Blockchain Technology',
+    description: 'The future of blockchain technology is brimming with innovation and transformative potential across diverse sectors.',
+    date: '14 Mar 2024',
+    slug: 'future-of-blockchain',
+    image: '/images/article3.jpg',
   },
-  {
-    title: 'A list of Open Source Icon Collections',
-    description: 'Discover 10+ high-quality open-source icon libraries for your web design projects.',
-    date: '12 Mar',
-    slug: 'list-of-open-source-icon-collections',
-    image: '/images/open-source-icon.jpg',
-  },
-  {
-    title: 'Icon Design Principles',
-    description: 'Explore the fundamental principles of designing effective and aesthetically pleasing icons.',
-    date: '10 Mar',
-    slug: 'icon-design-principles',
-    image: '/images/icon-design.jpg',
-  },
-  
 ];
 
 
