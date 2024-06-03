@@ -2,12 +2,21 @@
 import { notFound } from 'next/navigation';
 import PostContent from '../../../components/PostContent';
 
-const posts = {
+// Define the type for the params object
+type Params = {
+  slug: string;
+};
+
+// Define the type for the PostPage props
+type PostPageProps = {
+  params: Params;
+};
+
+const posts: { [key: string]: { title: string; date: string; content: string } } = {
   'country-flag-icon-packs': {
-    
-      "title": "The Benefits of Using a Laptop for Coding and How to Learn Coding",
-      "date": "22 Mar 2024",
-      "content": `
+    title: "The Benefits of Using a Laptop for Coding and How to Learn Coding",
+    date: "22 Mar 2024",
+    content: `
       <img src="/images/flag-icon.jpg" alt="Country Flags" style="width: 100%; max-height: 400px; height: auto; border: 2px solid red" />
       <br />
         <p>In today's fast-paced digital world, the choice of tools for coding can significantly impact a programmer's efficiency and overall experience. Laptops have become a preferred choice for many coders due to their versatility, portability, and powerful capabilities. Here are some key benefits of using a laptop for coding:</p>
@@ -50,13 +59,11 @@ const posts = {
         <br />
         <p>By choosing a suitable programming language, utilizing online courses, practicing regularly, building projects, and engaging with the coding community, anyone can develop the skills necessary to succeed in the world of programming.</p>
       `
-    
-    
   },
   'free-alternative-of-font-awesome': {
-    "title": "The Benefits of Mindfulness Meditation and How to Start Practicing",
-    "date": "2 June 2024",
-    "content": `
+    title: "The Benefits of Mindfulness Meditation and How to Start Practicing",
+    date: "2 June 2024",
+    content: `
     <img src="/images/custom-icon-fonts.jpg" alt="Mindfulness Meditation" style="width: 100%; max-height: 400px; height: auto; border: 2px solid green" />
     <br />
     <p>In today's hectic world, mindfulness meditation has gained widespread recognition for its numerous benefits to mental and physical well-being. Whether you're seeking stress relief, improved focus, or emotional balance, integrating mindfulness into your daily life can yield significant rewards. Here are some key benefits of mindfulness meditation:</p>
@@ -122,10 +129,9 @@ const posts = {
               <p>1. Simplicity<br>Keep your icons simple and easy to understand.</p>
               <!-- Add more content as needed -->`,
   },
-  
 };
 
-export default function PostPage({ params }) {
+export default function PostPage({ params }: PostPageProps) {
   const { slug } = params;
   const post = posts[slug];
 
