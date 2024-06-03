@@ -1,6 +1,8 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <header className="bg-gray-800 text-white p-4">
+          <Link href={'/'} className="text-xl" >Saif's Random Opinions</Link>
+        </header>
+        <main className="flex-grow p-4 bg-black">{children}</main>
+        <footer className="bg-gray-800 text-white p-4 text-center">
+          <p>If you love reading my random lines then share your random lines with me as well.</p>
+        </footer>
+      </body>
     </html>
   );
 }

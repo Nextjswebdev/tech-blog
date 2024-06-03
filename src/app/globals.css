@@ -16,7 +16,7 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +24,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+
+/* styles/globals.css */
+h1 {
+  font-size: 2.25rem; /* example size, adjust as needed */
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
+
+h2 {
+  font-size: 1.875rem; /* example size, adjust as needed */
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Add more styles as needed */
+
+ 
